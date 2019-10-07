@@ -31,17 +31,17 @@ def gen_al_space(self):
 
     Example::
 
-         hyper_top_opt = {
+        hyper_top_opt = {
             'cnn_rnn_dropout':{
-                 'type': 'uniform',
-                 'range': [0,1]},
-             'optimizer_type':{
-                 'type': 'choice',,
-                 'range': ['Adadelta', 'Adam', 'RMSProp', 'SGD']},
-             'layer1_filters':{
-                 'type': 'quniform',
-                 'range': [16, 64],
-                 'step': 1}}
+                'type': 'uniform',
+                'range': [0,1]},
+            'optimizer_type':{
+                'type': 'choice',,
+                'range': ['Adadelta', 'Adam', 'RMSProp', 'SGD']},
+            'layer1_filters':{
+                'type': 'quniform',
+                'range': [16, 64],
+                'step': 1}}
 
     Raises:
         KeyError: if ``type`` is other than ``uniform``, ``quniform`` or

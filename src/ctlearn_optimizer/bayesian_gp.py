@@ -11,16 +11,16 @@ def skopt_space(hyper_to_opt):
             hyperparameters to optimize. This dictionary must follow the next
             syntax:
 
-                .. code:: python
+            .. code:: python
 
-                    hyper_to_opt = {'hyperparam_1': {'type': ...,
-                                                    'range: ...,
-                                                    'step': ...},
-                                    'hyperparam_2': {'type': ...,
-                                                    'range: ...,
-                                                    'step': ...},
-                                    ...
-                                    }
+                hyper_to_opt = {'hyperparam_1': {'type': ...,
+                                                 'range: ...,
+                                                 'step': ...},
+                                'hyperparam_2': {'type': ...,
+                                                 'range: ...,
+                                                 'step': ...},
+                                ...
+                                }
 
             See the oficial documentation for more details.
 

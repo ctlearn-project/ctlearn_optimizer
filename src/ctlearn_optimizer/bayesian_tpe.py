@@ -33,25 +33,25 @@ def hyperopt_space(hyper_to_opt):
 
     Example::
 
-         hyper_top_opt = {
-                'cnn_rnn_dropout':{
-                    'type': 'uniform',
-                    'range': [0,1]},
-                'optimizer_type': {
-                    'type': 'choice',
-                    'range': ['Adadelta', 'Adam', 'RMSProp', 'SGD']},
-                'number_of_layers':{
-                    'type': 'conditional',
-                    'range': {
-                        'value': 1,
-                        'cond_params':{
-                            'layer1_kernel':{
-                                'type': 'quniform',
-                                'range': [2, 10],
-                                'step': 1},
-                            'base_learning_rate':{
-                                'type': 'loguniform',
-                                'range': [-5, 0]} }}}}
+        hyper_top_opt = {
+            'cnn_rnn_dropout':{
+                'type': 'uniform',
+                'range': [0,1]},
+            'optimizer_type': {
+                'type': 'choice',
+                'range': ['Adadelta', 'Adam', 'RMSProp', 'SGD']},
+            'number_of_layers':{
+                'type': 'conditional',
+                'range': {
+                    'value': 1,
+                    'cond_params':{
+                        'layer1_kernel':{
+                            'type': 'quniform',
+                            'range': [2, 10],
+                            'step': 1},
+                        'base_learning_rate':{
+                            'type': 'loguniform',
+                            'range': [-5, 0]} }}}}
 
     """
 

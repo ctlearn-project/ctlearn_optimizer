@@ -5,7 +5,6 @@ channels:
 dependencies:
     - hyperopt
     - matplotlib
-    - nbsphinx
     - numpy
     - pandas
     - pip
@@ -15,10 +14,8 @@ dependencies:
     - scikit-learn
     - seaborn
     - setproctitle
-    - sphinx
     - pip:
         - ray
-        - sphinx_rtd_theme
         - environment_kernels
         
 

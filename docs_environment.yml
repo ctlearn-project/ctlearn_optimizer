@@ -1,0 +1,15 @@
+# conda env update --file docs_environment.yml
+name: null
+channels:
+    - conda-forge
+dependencies: 
+    - nbsphinx
+    - ipython
+    - pip
+    - sphinx
+    - pip:
+        - sphinx-autoapi
+        - sphinx_rtd_theme
+    
+        
+

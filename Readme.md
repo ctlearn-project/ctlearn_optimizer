@@ -16,13 +16,12 @@ a scalable framework for hyperparameter search and model training, and supports:
 
 * **[Juan Alfonso Redondo Pizarro](https://github.com/jredondopizarro)**
 
-## Dependencies
+## Project dependencies
 
 - CTLearn
 - environment_kernels
 - Hyperopt
 - Matplotlib
-- nbsphinx
 - NumPy
 - Pandas
 - pip
@@ -33,7 +32,17 @@ a scalable framework for hyperparameter search and model training, and supports:
 - Scikit-learn
 - Seaborn
 - setproctitle
+
+## Documentation dependencies (optional)
+
+The packages listed below are only necessary if you want to build the 
+documentation from the source.
+
+- ipython
+- nbsphinx
+- pip
 - Sphinx
+- sphinx-autoapi
 - sphinx_rtd_theme
 
 ### Installation, basic usage and configuration
